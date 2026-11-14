@@ -7,8 +7,8 @@ project_root = r"C:\Users\Yahia\Desktop\smart-parking-system-117"
 data_yaml = os.path.join(project_root, "dataset", "data.yaml")
 
 # Load pretrained YOLO model
-model = YOLO("yolo26n.pt")
-
+model = YOLO("C:/Users/Yahia/Desktop/smart-parking-system-117/dataset/custom_yolo.yaml")
+model.load('yolo26n.pt')
 # Train
 model.train(
     data=data_yaml,
